@@ -28,7 +28,7 @@ class ResumesController < ApplicationController
 
     respond_to do |format|
       if @resume.save
-        format.html { redirect_to @resume, notice: 'Resume was successfully created.' }
+        format.html { redirect_to @resume, notice: '创建成功' }
         format.json { render :show, status: :created, location: @resume }
       else
         format.html { render :new }
@@ -42,7 +42,7 @@ class ResumesController < ApplicationController
   def update
     respond_to do |format|
       if @resume.update(resume_params)
-        format.html { redirect_to @resume, notice: 'Resume was successfully updated.' }
+        format.html { redirect_to @resume, notice: '更新成功' }
         format.json { render :show, status: :ok, location: @resume }
       else
         format.html { render :edit }
@@ -56,7 +56,7 @@ class ResumesController < ApplicationController
   def destroy
     @resume.destroy
     respond_to do |format|
-      format.html { redirect_to resumes_url, notice: 'Resume was successfully destroyed.' }
+      format.html { redirect_to resumes_url, notice: '删除成功' }
       format.json { head :no_content }
     end
   end

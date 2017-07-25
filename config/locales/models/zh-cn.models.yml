@@ -1,0 +1,11 @@
+en:
+zh-cn:
+  errors:
+  activemodel:
+  activerecord:
+    model:
+      resume: 简历
+      user: 投递人
+    attributes:
+      resume:
+        personality: 自我描述
