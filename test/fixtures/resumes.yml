@@ -1,0 +1,21 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  personality: MyString
+  graduation_time: 2017-07-25 21:17:48
+  familiar_frame: MyString
+  apply: MyString
+  position: MyString
+  project_experience: MyString
+  self_evaluation: MyString
+  user_id: 1
+
+two:
+  personality: MyString
+  graduation_time: 2017-07-25 21:17:48
+  familiar_frame: MyString
+  apply: MyString
+  position: MyString
+  project_experience: MyString
+  self_evaluation: MyString
+  user_id: 1

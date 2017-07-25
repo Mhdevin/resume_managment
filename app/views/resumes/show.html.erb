@@ -1,0 +1,44 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Personality:</strong>
+  <%= @resume.personality %>
+</p>
+
+<p>
+  <strong>Graduation time:</strong>
+  <%= @resume.graduation_time %>
+</p>
+
+<p>
+  <strong>Familiar frame:</strong>
+  <%= @resume.familiar_frame %>
+</p>
+
+<p>
+  <strong>Apply:</strong>
+  <%= @resume.apply %>
+</p>
+
+<p>
+  <strong>Position:</strong>
+  <%= @resume.position %>
+</p>
+
+<p>
+  <strong>Project experience:</strong>
+  <%= @resume.project_experience %>
+</p>
+
+<p>
+  <strong>Self evaluation:</strong>
+  <%= @resume.self_evaluation %>
+</p>
+
+<p>
+  <strong>User:</strong>
+  <%= @resume.user_id %>
+</p>
+
+<%= link_to 'Edit', edit_resume_path(@resume) %> |
+<%= link_to 'Back', resumes_path %>
