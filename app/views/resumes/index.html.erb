@@ -1,19 +1,14 @@
-<p id="notice"><%= notice %></p>
-
-<h1>Resumes</h1>
-
 <table>
   <thead>
     <tr>
-      <th>Personality</th>
-      <th>Graduation time</th>
-      <th>Familiar frame</th>
-      <th>Apply</th>
-      <th>Position</th>
-      <th>Project experience</th>
-      <th>Self evaluation</th>
-      <th>User</th>
-      <th colspan="3"></th>
+      <th><%= Resume.human_attribute_name(:personality) %></th>
+      <th><%= Resume.human_attribute_name(:graduation_time) %></th>
+      <th><%= Resume.human_attribute_name(:familiar_frame) %></th>
+      <th><%= Resume.human_attribute_name(:apply_position) %></th>
+      <th><%= Resume.human_attribute_name(:project_experience) %></th>
+      <th><%= Resume.human_attribute_name(:self_evaluation) %></th>
+      <th><%= Resume.human_attribute_name(:user_id) %></th>
+      <th></th>
     </tr>
   </thead>
 
@@ -23,14 +18,15 @@
         <td><%= resume.personality %></td>
         <td><%= resume.graduation_time %></td>
         <td><%= resume.familiar_frame %></td>
-        <td><%= resume.apply %></td>
-        <td><%= resume.position %></td>
+        <td><%= resume.apply_position %></td>
         <td><%= resume.project_experience %></td>
         <td><%= resume.self_evaluation %></td>
         <td><%= resume.user_id %></td>
-        <td><%= link_to 'Show', resume %></td>
-        <td><%= link_to 'Edit', edit_resume_path(resume) %></td>
-        <td><%= link_to 'Destroy', resume, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+        <td>
+          <%= link_to 'Show', resume %>
+          <%= link_to 'Edit', edit_resume_path(resume) %>
+          <%= link_to 'Destroy', resume, method: :delete, data: { confirm: 'Are you sure?' } %>
+        </td>
       </tr>
     <% end %>
   </tbody>

@@ -3,10 +3,15 @@ zh-cn:
   errors:
   activemodel:
   activerecord:
-    model:
+    models:
       resume: 简历
       user: 投递人
     attributes:
       resume:
         personality: 自我描述
         graduation_time: 毕业时间
+        familiar_frame: 熟悉框架
+        apply_position: 申请职位
+        project_experience: 项目经验
+        self_evaluation: 自我评价
+        user_id: 投递人

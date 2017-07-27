@@ -16,8 +16,7 @@ ActiveRecord::Schema.define(version: 20170725131748) do
     t.string "personality"
     t.datetime "graduation_time"
     t.string "familiar_frame"
-    t.string "apply"
-    t.string "position"
+    t.string "apply_position"
     t.string "project_experience"
     t.string "self_evaluation"
     t.integer "user_id"
@@ -28,7 +27,7 @@ ActiveRecord::Schema.define(version: 20170725131748) do
 
   create_table "users", force: :cascade, options: "ENGINE=InnoDB DEFAULT CHARSET=utf8" do |t|
     t.string "name", limit: 50
-    t.integer "sex"
+    t.integer "sex", limit: 1
     t.datetime "birthday"
     t.string "nation"
     t.string "native_place"

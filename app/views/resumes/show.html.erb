@@ -1,44 +1,54 @@
-<p id="notice"><%= notice %></p>
+<div>
+    <table>
+      <thead>
+        <tr>
+          <th style="width:30%;">属性</th>
+          <th>值</th>
+        </tr>
+      </thead>
 
-<p>
-  <strong>Personality:</strong>
-  <%= @resume.personality %>
-</p>
+      <tbody>
 
-<p>
-  <strong>Graduation time:</strong>
-  <%= @resume.graduation_time %>
-</p>
+        <tr>
+          <th><%= Resume.human_attribute_name(:personality) %></th>
+          <td><%= @resume.personality %></td>
+        </tr>
 
-<p>
-  <strong>Familiar frame:</strong>
-  <%= @resume.familiar_frame %>
-</p>
+        <tr>
+          <th><%= Resume.human_attribute_name(:graduation_time) %></th>
+          <td><%= @resume.graduation_time %></td>
+        </tr>
 
-<p>
-  <strong>Apply:</strong>
-  <%= @resume.apply %>
-</p>
+        <tr>
+          <th><%= Resume.human_attribute_name(:familiar_frame) %></th>
+          <td><%= @resume.familiar_frame %></td>
+        </tr>
 
-<p>
-  <strong>Position:</strong>
-  <%= @resume.position %>
-</p>
+        <tr>
+          <th><%= Resume.human_attribute_name(:apply_position) %></th>
+          <td><%= @resume.apply_position %></td>
+        </tr>
 
-<p>
-  <strong>Project experience:</strong>
-  <%= @resume.project_experience %>
-</p>
+        <tr>
+          <th><%= Resume.human_attribute_name(:project_experience) %></th>
+          <td><%= @resume.project_experience %></td>
+        </tr>
 
-<p>
-  <strong>Self evaluation:</strong>
-  <%= @resume.self_evaluation %>
-</p>
+        <tr>
+          <th><%= Resume.human_attribute_name(:self_evaluation) %></th>
+          <td><%= @resume.self_evaluation %></td>
+        </tr>
 
-<p>
-  <strong>User:</strong>
-  <%= @resume.user_id %>
-</p>
+        <tr>
+          <th><%= Resume.human_attribute_name(:user_id) %></th>
+          <td><%= @resume.user_id %></td>
+        </tr>
 
-<%= link_to 'Edit', edit_resume_path(@resume) %> |
-<%= link_to 'Back', resumes_path %>
+      </tbody>
+    </table>
+<div>
+
+<div class="other-actions">
+  <%= link_to 'Edit', edit_resume_path(@resume) %> |
+  <%= link_to 'Back', resumes_path %>
+</div>

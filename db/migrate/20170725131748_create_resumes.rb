@@ -4,8 +4,7 @@ class CreateResumes < ActiveRecord::Migration[5.1]
       t.string :personality
       t.datetime :graduation_time
       t.string :familiar_frame
-      t.string :apply
-      t.string :position
+      t.string :apply_position
       t.string :project_experience
       t.string :self_evaluation
       t.integer :user_id
