@@ -27,8 +27,10 @@ gem 'enum_help'
 gem 'kaminari'
 
 gem 'ransack'
-
+gem 'redis', '~>3.2.1'
+gem 'sidekiq'
 gem 'i18n-tasks', '~> 0.2.10'
+gem 'carrierwave', '~> 1.0'
 
 gem 'jquery-rails'
 gem 'turbolinks', '~> 5'

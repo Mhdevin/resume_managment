@@ -5,6 +5,9 @@ class ResumesController < ApplicationController
   # GET /resumes.json
   def index
     @resumes = Resume.all
+    # HardWorker.my_method_async
+    # HardWorker.a_my_method_async
+    # MyWorker.my_method_async(third)
   end
 
   # GET /resumes/1
